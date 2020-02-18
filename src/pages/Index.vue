@@ -1,18 +1,17 @@
 <template>
-  <q-page padding>
-    <div class="row full">
-      <div class="col-12">
-        <q-input outlined dense v-model="produto" placeholder="Código, nome do produto" />
-        <q-btn class="search-btn" color="blue-6" icon="search" @click="adicionarLista()" />
+  <q-page padding class="flex flex-center">
+    <div class="row justify-center full-width">
+      <div class="col-11 q-ma-md">
+        <q-input outlined dense v-model="produto" placeholder="Nome do produtos" />
+      </div>
+      <div class="col-11">
+        <q-btn class="full-width" color="blue-6" label="Adicionar" @click="adicionarLista()" />
       </div>
     </div>
   </q-page>
 </template>
 
 <style lang="scss" scoped>
-.full{
-  height: 100vh !important;
-}
 </style>
 
 <script>

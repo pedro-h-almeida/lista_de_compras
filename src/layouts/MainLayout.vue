@@ -13,7 +13,7 @@
       <router-view />
     </q-page-container>
 
-    <q-footer reveal elevated>
+    <q-footer elevated>
       <q-toolbar>
         <q-tabs v-model="tab" dense class="full-width">
           <q-route-tab icon="fas fa-home" label="Início" to="/" exact />
