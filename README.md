@@ -1,6 +1,6 @@
 # Lista de Compras (lista_de_compras)
 
-Lista de produtos para ser usado em compras
+Um aplicativo de uma lista de compras desenvolvido para minha mãe :)
 
 ## Install the dependencies
 ```bash
