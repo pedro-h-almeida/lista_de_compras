@@ -57,6 +57,11 @@ module.exports = function (ctx) {
         'QRouteTab',
         'QBtn',
         'QInput',
+        'QItemLabel',
+        'QItem',
+        'QItemSection',
+        'QCheckbox',
+        'QPageSticky',
       ],
 
       directives: [
@@ -64,7 +69,9 @@ module.exports = function (ctx) {
       ],
 
       // Quasar plugins
-      plugins: []
+      plugins: [
+        'Notify'
+      ]
     },
 
     // https://quasar.dev/quasar-cli/cli-documentation/supporting-ie
