@@ -1,8 +1,11 @@
 <template>
   <q-page padding class="flex flex-center">
     <div class="row justify-center full-width">
+      <div class="col-12 text-center text-h5">
+        Adicione produtos a lista de compras
+      </div>
       <div class="col-11 q-ma-md">
-        <q-input outlined dense v-model="produto" placeholder="Nome do produtos" v-on:keyup.enter="adicionarLista()" />
+        <q-input outlined dense v-model="produto" placeholder="Nome do produto" v-on:keyup.enter="adicionarLista()" />
       </div>
       <div class="col-11">
         <q-btn class="full-width" color="blue-6" label="Adicionar" @click="adicionarLista()" />
@@ -32,12 +35,14 @@ export default {
             type: 'positive',
             message: 'Produto adicionado a lista',
             timeout: 500,
+            position: 'top',
           });
         } else {
           this.$q.notify({
             type: 'warning',
             message: 'Produto já está na lista',
             timeout: 500,
+            position: 'top',
           });
         }
         this.produto = '';
