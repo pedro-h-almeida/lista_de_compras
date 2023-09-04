@@ -18,7 +18,7 @@
         <q-tabs v-model="tab" dense class="full-width">
           <q-route-tab icon="fas fa-home" label="Início" to="/" exact />
           <q-route-tab icon="fas fa-list" label="Lista" to="/lista" exact />
-          <q-route-tab icon="fas fa-users" label="Grupos" to="/grupos" exact />
+          <!-- <q-route-tab icon="fas fa-users" label="Grupos" to="/grupos" exact /> -->
         </q-tabs>
       </q-toolbar>
     </q-footer>
